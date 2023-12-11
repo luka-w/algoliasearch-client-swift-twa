@@ -39,7 +39,7 @@ let package = Package(
       targets: ["AlgoliaSearchClient"])
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-log.git", from: "1.5.3")
+    .package(url: "https://github.com/luka-w/swift-log-twa", from: "1.6.0")
   ] + extraPackageDependencies,
   targets: [
     .target(
