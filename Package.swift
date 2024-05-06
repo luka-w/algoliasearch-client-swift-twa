@@ -30,7 +30,7 @@ let package = Package(
   platforms: [
     .iOS(.v9),
     .macOS(macOSVersion),
-    .watchOS(.v2),
+    .watchOS(.v7),
     .tvOS(.v9)
   ],
   products: [
@@ -39,7 +39,7 @@ let package = Package(
       targets: ["AlgoliaSearchClient"])
   ],
   dependencies: [
-    .package(url: "https://github.com/luka-w/swift-log-twa.git", from: "1.6.1")
+    .package(url: "https://github.com/apple/swift-log", from: "1.5.4")
   ] + extraPackageDependencies,
   targets: [
     .target(
